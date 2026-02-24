@@ -1,0 +1,1 @@
+// Lecture/Écriture dans le LocalStorage

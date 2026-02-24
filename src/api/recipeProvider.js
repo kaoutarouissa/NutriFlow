@@ -1,0 +1,1 @@
+//  Fonctions fetch() : getAllRecipes, searchRecipes (appel interier)

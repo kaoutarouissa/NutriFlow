@@ -1,0 +1,1 @@
+// Calculs des totaux, logique des badges

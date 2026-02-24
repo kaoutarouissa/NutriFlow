@@ -1,0 +1,1 @@
+// Point d'entrée : orchestre l'allumage de l'app
