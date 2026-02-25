@@ -5,6 +5,11 @@ import { displayRecipes } from './ui/render.js';
 const btn = document.getElementById("introbtn");// puis index lie direct m3a main dert event btn
 
 btn.addEventListener("click", () => {
+          document.body.style.backgroundImage = "none";
+
+    document.body.style.backgroundColor = "white";
+    
+
   displayRecipes();
 });
 async function initApp() {//had fnc pour test fn getrec li katjib data mn api
