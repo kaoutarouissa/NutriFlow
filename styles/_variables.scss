@@ -1,9 +1,24 @@
-// Couleurs , font-sizes
-$fonth1:bold;
+//  font
+
+$fontFamily:'Inter', sans-serif;
+$fontWaightPrimary:800;
+$fontWaightSecondary:600;
+$semititleFont:Arial;
+
+//color for bg
 $bgColorBody:white;
-$bgbtnColor:#FFF7BA, #E8FFB7, #BBFFBB;
+$bgdivColor:#FFF7BA, #E8FFB7, #BBFFBB;
+
+
+//bg img
+$bgImage: url('../images/bg.jpg');
+
+//color text
+$color:white;
 $colorPrimary:black;
 $secondaryColor:#E23E3E;
 $semititleColor:gray;
-$semititleFont:Arial;
-$borderRadius:34px;
+
+
+//size radius
+$borderRadius:41px;

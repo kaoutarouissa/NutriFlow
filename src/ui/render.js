@@ -4,7 +4,6 @@ import { getAllRecipes } from '../api/recipeProvider.js';;
 
 
 export async function displayRecipes() {//had fnc pour aff rcip via api
-
   const container = document.getElementById("recipes-container");//container li f index
 
   const recipes = await getAllRecipes();
@@ -17,6 +16,7 @@ export async function displayRecipes() {//had fnc pour aff rcip via api
     card.style.border = "1px solid #ccc";
     card.style.margin = "10px";
     card.style.padding = "10px";
+    
 
     const img = document.createElement("img");
     img.src = recipe.image;
