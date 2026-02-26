@@ -1,25 +1,33 @@
-// Point d'entrée : orchestre l'allumage de l'app
-import { getAllRecipes} from './api/recipeProvider.js';
-import { displayRecipes } from './ui/render.js';
+import { getAllRecipes } from "./api/recipeProvider.js";
+import { displayRecipes } from "./ui/render.js";
+import { show, hide, loader } from "./ui/loader.js"; 
 
-const btn = document.getElementById("introbtn");// puis index lie direct m3a main dert event btn
+const btn = document.getElementById("introbtn");
+const container = document.getElementById("recipes-container");
 
 btn.addEventListener("click", () => {
-          document.body.style.backgroundImage = "none";
+  document.body.style.backgroundImage = "none";
+  document.body.style.backgroundColor = "#fff";
 
-    document.body.style.backgroundColor = "white";
+  setTimeout(loader(), 2000);
+  initApp();
+});
+
+async function initApp() {
+  try {
+    
     
 
-  displayRecipes();
-});
-async function initApp() {//had fnc pour test fn getrec li katjib data mn api
-    try {
-        const recipes = await getAllRecipes(); // NJIB data mn getAllRecipes 
-        
-        console.log("tester Data mni jat:", recipes)             // pour test f console
-    } catch (error) {
-        console.error("Erreur d'affichage :", error);
-    }
-}
+    
+    const recipes = await getAllRecipes();
+    console.log("Data reçues:", recipes);
+  
+    
+    displayRecipes(recipes);
 
-initApp();
+  } catch (error) {
+    console.error("Erreur d'affichage :");
+    show();
+
+  }
+}
