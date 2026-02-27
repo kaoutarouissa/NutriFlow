@@ -4,11 +4,13 @@ import { show, hide, loader } from "./ui/loader.js";
 
 const btn = document.getElementById("introbtn");
 const container = document.getElementById("recipes-container");
+const title=document.getElementById("title")
 
 btn.addEventListener("click", () => {
   document.body.style.backgroundImage = "none";
   document.body.style.backgroundColor = "#fff";
-
+ title.style.display = "none";
+  btn.style.display = "none";
   setTimeout(loader(), 2000);
   initApp();
 });
