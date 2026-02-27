@@ -5,7 +5,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 10px;}
 
   #recipeSearch {
     display: flex;
@@ -31,7 +31,7 @@ body {
   }
 
   #recipes-container {
-    background-color: pink;
+    // background-color: transparent;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -62,7 +62,7 @@ body {
     gap: 5px;
     width: 100%;
   }
-}
+
 
 .div2 {
   display: flex;
