@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-image: url("../images/bg.jpg");
   background-size: cover;
@@ -6,18 +7,15 @@ body {
   margin: 0;
   padding-top: 10px;
 }
-
-#recipeSearch {
+body #recipeSearch {
   display: flex;
   flex-direction: column;
   margin: 14px;
 }
-
-#titleh2 {
+body #titleh2 {
   color: black;
 }
-
-input {
+body input {
   border-radius: 41px;
   border: 5px solid rgb(173, 169, 169);
   padding: 10px;
@@ -30,16 +28,14 @@ input {
   height: 40px;
   font-size: 16px;
 }
-
-#recipes-container {
+body #recipes-container {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
   padding: 10px;
 }
-
-.recipe-card {
+body .recipe-card {
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 46px;
@@ -53,64 +49,52 @@ input {
   gap: 100px;
   justify-content: space-between;
 }
-
-.div1 {
+body .div1 {
   flex-direction: column;
   display: flex;
-  align-items: center;
   gap: 5px;
-  width: 100%;
 }
-
-.div2 {
+body .div2 {
   display: flex;
   gap: 15px;
   padding-top: 18px;
 }
-
-.div2 .recipe-img {
+body .div2 .recipe-img {
   width: 35px;
   height: 35px;
   object-fit: cover;
   cursor: pointer;
 }
-
-.recipe-img {
+body .recipe-img {
   width: 16px;
   height: 16px;
 }
-
-.img {
+body .img {
   justify-content: center;
 }
-
-.img .icon-share {
+body .img .icon-share {
   border-radius: 50%;
   height: 150px;
   object-fit: cover;
 }
-
-.div1 > .recipe-title {
+body .div1 > .recipe-title {
   color: black;
   overflow: hidden;
   text-overflow: nowrap;
 }
-
-#Container {
+body #Container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-h1 {
+body h1 {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 800;
   font-size: 40px;
   text-align: center;
 }
-
-button {
+body button {
   color: white;
   background-color: #E23E3E;
   border-radius: 41px;
@@ -119,20 +103,19 @@ button {
   font-weight: 600;
   cursor: pointer;
 }
-
-#msgloader.hidden {
+body #msgloader.hidden {
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-#msgloader.hidden p {
+body #msgloader.hidden p {
   display: none;
   font-size: 18px;
   color: black;
 }
-#msgloader.hidden #spiner {
+body #msgloader.hidden #spiner {
   display: none;
   width: 60px;
   height: 60px;
@@ -147,10 +130,10 @@ button {
   }
 }
 
+/* Desktop ≥768px */
 @media screen and (min-width: 768px) {
-  .recipes-container {
-    width: 90%;
-    padding: 20px;
+  .div2 {
+    margin-left: 0;
   }
 }
 

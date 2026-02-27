@@ -12,8 +12,8 @@ heading.textContent = "Find best recipes for cooking";
     card.innerHTML = `<div class="div1">
       <h3 class="recipe-title">${recipe.name}</h3>
       <div class="div2">
-              <img class="recipe-img" src="../images/search.png" alt="">
-        <img class="recipe-img" src="../images/search.png" alt="">
+              <img class="recipe-img" src="../images/heart.png" alt="">
+        <img class="recipe-img" src="../images/calories.png" alt="">
         </div>
         </div>
 
