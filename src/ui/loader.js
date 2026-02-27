@@ -3,7 +3,7 @@ const spinner = document.getElementById("spiner");
 const message = document.getElementById("mymsg");
 
 export function loader(){
-      spinner.classList.remove("hidden");
+      spinner.style.display="block";
 
 }
 export function show(messageText = "Veuillez patienter...Il ya un error lors le chargement du Recipes") {

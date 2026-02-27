@@ -1,8 +1,10 @@
 export function displayRecipes(recipes) {
   const container = document.getElementById("recipes-container");
-  container.innerHTML = "";
-// container.style.marginTop = "100px";
-// container.style.position = "relative";
+  const recipeAffiche=document.getElementById("recipeSearch")
+ const heading = document.getElementById("titleh2");
+ const searchInput = document.getElementById("Input");
+ searchInput.placeholder = "Search recipes...";
+heading.textContent = "Our Healthy Recipes";
   recipes.forEach((recipe) => {
     const card = document.createElement("div");
     card.style.border = "1px solid #000";

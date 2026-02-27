@@ -5,13 +5,28 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
   padding-top: 10px;
-  overflow: hidden;
+ 
+  
+  #recipeSearch{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left:14px ;
+  }
+
+    #titleh2{
+      color:$colorPrimary;
+    }
+    input{
+      border-radius: $borderRadius;
+      border: 5px solid rgb(173, 169, 169);
+      padding: 10px;
+      display: none;
+    }
+//     input::before {
+//   content: url('https://example.com/icon.png');
+// }
   
   #recipes-container {
     width: 90%;
@@ -20,6 +35,11 @@ body {
     padding: 20px;
 margin-top: 50px;
     // margin-top: 110px;
+  }
+  #Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   h1 {
     color: $color;
@@ -36,6 +56,7 @@ margin-top: 50px;
     height: 67px;
     font-weight: $fontWaightSecondary;
     cursor: pointer;
+    
   }
 }
 #msgloader.hidden{

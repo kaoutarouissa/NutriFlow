@@ -4,13 +4,21 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0;
+  padding-top: 10px;
+}
+body #recipeSearch {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding-top: 10px;
-  overflow: hidden;
+  margin-left: 14px;
+}
+body #titleh2 {
+  color: black;
+}
+body input {
+  border-radius: 41px;
+  border: 5px solid rgb(173, 169, 169);
+  padding: 10px;
+  display: none;
 }
 body #recipes-container {
   width: 90%;
@@ -18,6 +26,11 @@ body #recipes-container {
   background-color: pink;
   padding: 20px;
   margin-top: 50px;
+}
+body #Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body h1 {
   color: white;
